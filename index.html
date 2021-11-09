@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SCUBA BINGO Sign-up</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+<form id='signup'>
+<p class="tip"></p>
+<div class="cont">
+  <div class="form sign-in">
+    <h2>SCUBA BINGO</h2>
+    <label>
+      <span>Email</span>
+      <input type="email" id="InputEmail" aria-describedby="Email Input" placeholder="smith@gmil.com" required>
+    </label>
+    <label>
+      <span>Password</span>
+      <input type="password" id="InputPassword">
+      <input id ="togglePassword" type="checkbox" aria-describedby="Password Input" required> 
+      <span>Show Password</span>
+    </label>
+    <label>
+      <span>First name</span>
+      <input type="text" aria-describedby="First name" id="InputFname" placeholder="John" required>
+    </label>
+    <label>
+      <span>Last name</span>
+      <input type="text" id="InputLname" aria-describedby="Last name" placeholder="Doe" required>
+    </label>
+    <label>
+      <span>Phone number</span>
+      <input type="tel" id="phoneNumInput" pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" aria-describedby="Phone number">
+    </label>
+    <label>
+      <span>Date and time</span>
+      <input type="datetime-local" id="InputDateTime" aria-describedby="Date and Time" required>
+    </label>
+    <label>
+      <label>
+      <span id="pizzaOutput" for="pizzaCheckbox">Check me if you're bringing pizza!</span>
+      <input id="pizzaCheckbox" type="checkbox" class="form-check-input" aria-describedby="Bring tacos? ">
+    </label>
+    <label>
+       <button class="btn-primary" type="submit">Submit</button>
+       <button class="btn" name="ResetForm" id="ResetForm" type="button">Reset Data</button>
+     </label>
+  </div>
+  <div class="sub-cont">
+    <div class="img"></div>
+   
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script  src="./scripts/script.js"></script>
+
+</body>
+</html>
